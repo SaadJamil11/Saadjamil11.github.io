@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Unplug | Defeat Burnout</title>
+    <!-- Modern Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Daily Unplug<span>.</span></div>
+    </nav>
+
+    <main>
+        <section class="hero glass-panel">
+            <div class="badge">Early Access Beta</div>
+            <h1>Defeat Burnout in <br><span class="highlight">2 Minutes</span> a Day.</h1>
+            <p class="subtitle">A micro-intervention sent directly to your inbox every morning. Take back control, reset your nervous system, and thrive.</p>
+            <form id="hero-form" class="email-form">
+                <input type="email" placeholder="Enter your email address..." required>
+                <button type="submit" class="cta-button primary">Start Free Trial</button>
+            </form>
+            <p class="micro-copy">No credit card required. Cancel anytime.</p>
+        </section>
+
+        <section class="how-it-works glass-panel">
+            <h2>How It Works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="icon-circle"><i class="fa-solid fa-envelope-open-text"></i></div>
+                    <h3>1. Open Your Email</h3>
+                    <p>Receive one highly-actionable micro-tip or 2-minute restorative exercise each morning.</p>
+                </div>
+                <div class="step">
+                    <div class="icon-circle"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                    <h3>2. Take 2 Minutes</h3>
+                    <p>Follow the simple, guided exercise. From box breathing to visual grounding.</p>
+                </div>
+                <div class="step">
+                    <div class="icon-circle"><i class="fa-solid fa-battery-full"></i></div>
+                    <h3>3. Recharge</h3>
+                    <p>Interrupt the stress cycle, lower cortisol, and face your day with a clear head.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <h2>Choose Your Path</h2>
+            <div class="pricing-grid">
+                <!-- Free Tier -->
+                <div class="pricing-card glass-panel">
+                    <div class="tier-name">Free</div>
+                    <div class="price">$0<span>/mo</span></div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> 1 Micro-Habit per week</li>
+                        <li><i class="fa-solid fa-check"></i> Basic breathing exercises</li>
+                        <li><i class="fa-solid fa-check"></i> Community support</li>
+                    </ul>
+                    <a href="#hero-form" class="cta-button secondary">Start Free</a>
+                </div>
+
+                <!-- Premium Tier -->
+                <div class="pricing-card glass-panel featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="tier-name">Premium</div>
+                    <div class="price">$5<span>/mo</span></div>
+                    <ul class="features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Daily</strong> Micro-Habits</li>
+                        <li><i class="fa-solid fa-check"></i> Personalized audio interventions</li>
+                        <li><i class="fa-solid fa-check"></i> Progress tracking & Analytics</li>
+                        <li><i class="fa-solid fa-check"></i> VIP Discord access</li>
+                    </ul>
+                    <button class="cta-button primary premium-btn">Unlock Premium</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Daily Unplug. All rights reserved.</p>
+    </footer>
+
+    <!-- Premium Waitlist Modal -->
+    <div id="premium-modal" class="modal-overlay hidden">
+        <div class="modal glass-panel">
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h2>Premium is Launching Soon!</h2>
+            <p>We're currently scaling our servers to handle demand. Join the waitlist today and lock in a <strong>50% lifetime discount</strong> when we go live.</p>
+            <form id="waitlist-form" class="email-form">
+                <input type="email" placeholder="Enter your email to secure discount..." required>
+                <button type="submit" class="cta-button primary">Join Waitlist</button>
+            </form>
+            <p class="success-message hidden">You're on the list! Keep an eye on your inbox.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
